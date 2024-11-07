@@ -1,7 +1,51 @@
 /** CSS STYLE **/
 
-.hello {
+.basic_settings {
+  width: 1440px;
   display: block;
+}
 
-  color: #fff;
+
+header {
+  height: 914px;
+}
+
+.video_section {
+  height: 914px;
+  top: 914px;
+}
+
+.navigation_section {
+ height: 891px;
+ top:1828px;
+}
+
+.Ikea_Effect {
+  height: 905px;
+  top: 2719px;
+}
+
+.Premature_Optimization {
+  height: 855px;
+  top: 3624px;
+}
+
+.Distorsion_of_Novelty {
+  height: 880px;
+  top: 4479;
+}
+
+.Hyperbolic_Depreciation {
+  height: 937px;
+  top: 5359px;
+}
+
+.Errors_of_Planing {
+  height: 919px;
+  top: 6296px;
+}
+
+footer {
+  height: 581px;
+  top: 7215px;
 }
