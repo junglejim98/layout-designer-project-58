@@ -1,10 +1,47 @@
 /** CSS STYLE **/
 
-.basic_settings {
-  width: 1440px;
-  display: block;
+:root {
+   --white: #fff;
+   --tranclecent-white: #d7ccc0;
+   --bright: #f5f4f0;
+   --main: #fe8a02;
+   --main-dark: #42413c;
+   --dark: #2a2626;
+   --translucent-dark: #908d8b;
+   --brown: #b09a81;
+   --blue: #1085c5;
+   --font-main: #2A2626;
 }
 
+.section_settings {
+  width: 1440px;
+  display: block;
+  max-width: 1110px;
+  margin: 100px 0;
+  inline-size: 1.2em;
+  font-family: "Neucha", serif;
+
+}
+
+p {
+  font-family: 'Open Sans', serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  inline-size: 1.6em;
+  color: var(--font-main);
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
 
 header {
   height: 914px;
