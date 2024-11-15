@@ -18,6 +18,7 @@ html {
   font-family: 'Open Sans', serif;
   font-optical-sizing: auto;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 p,
@@ -54,6 +55,7 @@ h3 {
 .section-bg-settings {
   position: relative;
   background-color: var(--bright);
+  z-index: -1;
 }
 
 .section-bg-settings::before {
@@ -64,11 +66,16 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  z-index: -1;
   content: "";
 }
 
+header {
+  height: 914px;
+}
+
 .header {
-  height: 714px;
+  gap: 200px;
   max-width: 1110px;
   padding: 100px 0;
   margin: 0 auto;
@@ -96,6 +103,7 @@ h3 {
 .row {
   display:flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .flex-50 {
@@ -176,7 +184,6 @@ filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .nav-card-title {
-  box-sizing: border-box;
   flex-basis: 350px;
   height: 323px;
  
@@ -218,4 +225,65 @@ filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 
 .h348 {
    height: 348px;
+}
+
+/*IKEA section*/
+
+#ikea-effect {
+  background-color: var(--bright);
+  height: 900px;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.container-img {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%)); 
+  vertical-align: middle;
+}
+
+.container-basis {
+  flex-basis: 540px;
+}
+
+.padding-container {
+  max-width: 1100px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.title-block-translucent {
+    color: var(--translucent-dark);
+    font-size: 24px;
+}
+
+.title-block-dark {
+  color: var(--font-main);
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.title-block-p {
+  font-size: 34px;
+  line-height: 40.8px;
+}
+
+.title-block-text {
+  font-family: "Neucha", serif;
+}
+
+.how-manifests-dark {
+  box-sizing: border-box;
+  color: var(--white);
+  background-color: var(--brown);
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  margin: 100px 0 20px 0;
+  padding-left: 10px;
 }
