@@ -41,6 +41,7 @@ h1 {
   font-family: "Neucha", serif;
   font-size: 72px;
   line-height: 1.2em;
+  font-weight: 400;
 }
 
 h2 {
@@ -95,8 +96,7 @@ header {
 /* video section */
 
 .video-section-settings {
-  
-  min-height: 814px;
+  height: 600px;
   display: block;
   text-align: center;
 }
@@ -109,7 +109,6 @@ header {
   align-items: center;
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 71px;
   gap: 30px;
 }
 
