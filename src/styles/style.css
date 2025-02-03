@@ -22,6 +22,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+}
+
 /*text settings*/
 
 p,
@@ -73,8 +77,8 @@ header {
 
 .header-image {
   position:absolute;
-  left: 310px;
-  top: 55px;
+  left: 295px;
+  top: 53px;
   height: 525px;
 }
 
