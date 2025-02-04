@@ -1,0 +1,405 @@
+/** CSS STYLE **/
+
+:root {
+  --white: #fff;
+  --transparent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --transparent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+/** ALL STYLES **/
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans.ttf");
+}
+
+@font-face {
+  font-family: Neucha;
+  src: url("../fonts/Neucha.ttf");
+}
+
+body {
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+  color: var(--main);
+}
+
+h3 {
+  font-size: 34px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section,
+footer {
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.orange-text {
+  color: var(--main);
+}
+
+.transparent-dark-text {
+  color: var(--transparent-dark);
+}
+
+.transparent-white-text {
+  color: var(--transparent-white);
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.flex-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0;
+  color: var(--dark);
+}
+
+.flex-block {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.mp0 {
+  margin: 0;
+  padding: 0;
+}
+
+.background-before {
+  position: relative;
+  background-color: var(--light);
+}
+
+.dark-theme {
+  background-color: var(--brown);
+}
+
+.background-before::before {
+  content: "";
+  background-image: url("images/background.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.section-img {
+  z-index: 2;
+  position: relative;
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.how-section-title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white);
+  text-indent: 8px;
+  background-color: var(--brown);
+  padding: 5px 0;
+}
+
+.dark-theme .how-section-title {
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+.header-section-block {
+  font-family: Neucha, sans-serif;
+}
+
+.header-section-block h1 {
+  font-size: 60px;
+}
+
+.top-p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.bottom-p {
+  margin-top: 30px;
+  padding: 0;
+  font-size: 34px;
+  line-height: 40.8px;
+}
+
+/** HEADER STYLE **/
+.image-position {
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+#header-image {
+  height: 525px;
+  width: auto;
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  z-index: 1;
+}
+
+#header-title {
+  color: var(--dark);
+  position: relative;
+  z-index: 2;
+}
+
+#header-button {
+  border: none;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--main);
+  display: inline-block;
+  opacity: 1;
+  position: relative;
+}
+
+/** VIDEO SECTION STYLE **/
+
+.video-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color: var(--white);
+  background-image: none;
+  position: relative;
+}
+
+.video {
+  position: relative;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  width: 919px;
+  height: 517px;
+  z-index: 2;
+  border: none;
+}
+
+.video-section-header {
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.content-video-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-section-paragraph {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.image-video-preview {
+  width: 100%;
+  height: 100%;
+}
+
+#preview-image h1 {
+  font-size: 60px;
+}
+
+/** NAVIGATOR STYLE **/
+
+#navigation {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 200px;
+  margin-top: -200px;
+  background-color: var(--main-dark);
+}
+
+#navigation .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-flex-item {
+  width: 302px;
+  height: 275px;
+  margin: 0;
+  background-color: var(--light);
+  padding: 24px;
+  color: var(--dark);
+}
+
+.nav-flex-item:hover {
+  background-color: var(--main);
+  color: var(--white);
+}
+
+.nav-flex-item:hover h3 {
+  color: var(--white);
+}
+
+.mt-20 {
+  margin-top: 20px;
+  height: 308px;
+}
+
+#nav-flex-title {
+  width: 350px;
+}
+
+#nav-flex-title h1 {
+  font-size: 52px;
+}
+
+.nav-flex-item h2 {
+  font-size: 64px;
+  padding-bottom: 40px;
+  line-height: 1em;
+  color: var(--main-dark);
+}
+
+.nav-flex-item:hover h2 {
+  color: var(--white);
+}
+
+/** IKEA EFFECT STYLE **/
+
+.footer-flex {
+  display: flex;
+  background-color: var(--main-dark);
+  color: var(--white);
+  position: relative;
+  align-items: center;
+}
+
+.footer-flex > div {
+  width: 50%;
+  margin: 40px 55px;
+}
+
+.footer-flex p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-flex p > a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+#contact-info {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#contact-info a {
+  color: #1085c5;
+  text-decoration: underline;
+}
+
+.footer-form input {
+  height: 50px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 6px;
+}
+
+.footer-form label {
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
+#footer-btn {
+  height: 50px;
+  width: 70px;
+  position: absolute;
+  top: 75px;
+  right: 55px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  z-index: 0;
+}
+
+#footer-btn::before {
+  content: "";
+  background-image: url("images/send.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  width: 45%;
+  height: 45%;
+  z-index: 1;
+}
