@@ -12,7 +12,6 @@
   --translucent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
-  --font-main: #2A2626;
 }
 
 html {
@@ -38,7 +37,7 @@ h3 {
 
 p {
  line-height: 1.6em;
- color: var(--font-main);
+ color: var(--dark);
 }
 
 h1 {
@@ -286,7 +285,7 @@ section {
 }
 
 .title-block-dark {
- color: var(--font-main);
+ color: var(--dark);
  font-size: 60px;
  line-height: 72px;
  font-weight: 400;
@@ -299,6 +298,7 @@ section {
  color: var(--white);
  background-color: var(--brown);
  font-size: 14px;
+ line-height: 16px;
  font-weight: 700;
  width: 100%;
  margin: 100px 0 20px 0;
@@ -308,6 +308,8 @@ section {
 .title-block-translucent-light {
  color: var(--tranclecent-white);
  font-size: 24px;
+ padding: 0;
+ margin: 0;
 }
 
 .title-block-light {
@@ -322,6 +324,8 @@ margin-bottom: 30px;
  color: var(--white);
  font-size: 34px;
  line-height: 40.8px;
+ padding: 0;
+ margin: 0;
 }
 
 .how-manifests-light {
@@ -330,6 +334,7 @@ margin-bottom: 30px;
  color: var(--brown);
  background-color: var(--white);
  font-size: 14px;
+ line-height: 16px;
  font-weight: 700;
  width: 100%;
  margin: 100px 0 20px 0;
@@ -347,11 +352,20 @@ footer {
  font-size: 34px;
  line-height: 40.8px;
  font-weight: 400;
+ margin: 40px 55px;
 }
+
+.sender-block form {
+  margin: 40px 55px;
+ }
+
+ .sender-block p {
+  margin: 0;
+  font-size: 18px;
+ }
 
 .sender-block {
  box-sizing: border-box;
- padding: 55px 0 55px 55px;
  margin: 0 auto;
  background-color: var(--main-dark);
  max-width: 1100px;
@@ -395,9 +409,9 @@ footer {
 
 .info {
  margin-top: 60px;
- font-size: 14px;
  text-align: center;
 }
-.p14{
-  padding-top: 14px;
+.mp0{
+ padding: 0;
+ margin: 0;
  }
