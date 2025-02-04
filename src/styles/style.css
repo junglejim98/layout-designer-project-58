@@ -1,4 +1,7 @@
 /** CSS STYLE **/
+* {
+  outline: 1px solid red;
+}
 
 :root {
    --white: #fff;
@@ -75,12 +78,15 @@ header {
   box-sizing: border-box;
 }
 
-.header-image {
-  position:absolute;
-  left: 295px;
-  top: 53px;
-  height: 525px;
-}
+
+  .header-image {
+    position: absolute;
+    left: 295px;
+    top: 53px;
+    height: 525px;
+    max-width: 100%; /* Ограничьте ширину изображения */
+  }
+
 
 .button-org {
   background-color: var(--main);
