@@ -1,7 +1,5 @@
 /** CSS STYLE **/
-* {
-  outline: 1px solid red;
-}
+
 
 :root {
    --white: #fff;
@@ -74,17 +72,16 @@ h3 {
 /*header settings*/
 
 header {
-  min-height: 900px;
+  min-height: 912px;
   box-sizing: border-box;
 }
 
 
   .header-image {
     position: absolute;
-    left: 295px;
-    top: 53px;
-    height: 525px;
-    max-width: 100%; /* Ограничьте ширину изображения */
+    right: -268px;
+    top: 55px;  
+    max-height: 525px;  
   }
 
 
@@ -93,9 +90,9 @@ header {
   color: var(--white);
   font-weight: 700;
   position: relative;
-  top: 40px;
+  top: 52px;
   width: 148px;
-  padding: 12px 24px;
+  padding: 14px 24px;
   text-decoration: none;
 }
 
@@ -248,13 +245,13 @@ section {
 
 .padding-container {
   position: relative;
-  max-width: 1100px;
-  padding: 100px 0;
+  max-width: 1111px;
+  padding: 106px 0;
   margin: 0 auto;
 }
 
 .p200 {
-  padding-top: 200px;
+  padding-top: 193px;
 }
 
 /*texts in blocks*/
